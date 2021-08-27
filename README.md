@@ -1,6 +1,6 @@
 # Point of Interest
 
-Check the code on github at:
+Check the code on github at: https://github.com/DantasticWebSolutions/pointOfInterest
 
 ## Install
 

@@ -1,303 +1,303 @@
 * {
-	margin: 0;
-	padding: 0;
-	outline: 0;
-	box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
 }
 
 body {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 a {
-	color: unset;
+  color: unset;
 }
 .center {
-	margin: auto;
-	width: 60%;
-	border: 5px solid #ffff00;
-	padding: 10px;
+  margin: auto;
+  width: 60%;
+  border: 5px solid #ffff00;
+  padding: 10px;
 }
 
 .header {
-	/* margin: 20px; */
-	position: fixed;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 60px;
-	background-color: white;
-	color: rgb(255, 255, 255) !important;
-	background-color: #000;
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-	align-items: center;
-	z-index: 100;
+  /* margin: 20px; */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  background-color: white;
+  color: rgb(255, 255, 255) !important;
+  background-color: #000;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
 }
 
 .header a {
-	text-decoration: none;
+  text-decoration: none;
 }
 .header > * {
-	margin: 10px;
+  margin: 10px;
 }
 
 .logo {
-	width: 200px;
-	height: 100%;
-	display: flex;
-	flex-direction: row;
-	align-items: center;
+  width: 200px;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
 .logo img {
-	width: 50px;
-	height: 50px;
-	margin-right: 10px;
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
 }
 
 #details {
-	width: 100%;
-	display: table;
+  width: 100%;
+  display: table;
 }
 
 .btn1 {
-	background-color: black;
+  background-color: black;
 }
 
 body {
-	font-family: Calibri, Helvetica, sans-serif;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
+  font-family: Calibri, Helvetica, sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 #floatingButton {
-	position: fixed;
-	bottom: 20px;
-	right: 20px;
-	width: 50px;
-	height: 50px;
-	border: #000 2px solid;
-	border-radius: 50%;
-	z-index: 99999;
-	background-color: #fff;
-	transition: all 0.3s ease-in;
-	font-size: 20px;
-	line-height: 1;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	transform: rotate(-45deg);
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  border: #000 2px solid;
+  border-radius: 50%;
+  z-index: 99999;
+  background-color: #fff;
+  transition: all 0.3s ease-in;
+  font-size: 20px;
+  line-height: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transform: rotate(-45deg);
 }
 #floatingButton.open {
-	transform: rotate(0deg);
+  transform: rotate(0deg);
 }
 #floatingButton div {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 #openedTab {
-	width: 0;
-	height: 300px;
-	position: fixed;
-	bottom: 20px;
-	right: 20px;
-	color: #f0f2f5;
-	overflow-x: hidden;
-	transition: 0.5s;
-	z-index: 999;
-	box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
-	border-radius: 5px;
+  width: 0;
+  height: 300px;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  color: #f0f2f5;
+  overflow-x: hidden;
+  transition: 0.5s;
+  z-index: 999;
+  box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
+  border-radius: 5px;
 }
 
 #openedTab.open {
-	width: 250px;
+  width: 250px;
 }
 
 .tabContainer {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	position: relative;
-	width: 100%;
-	height: 90%;
-	top: 0;
-	left: 0;
-	padding: 20px 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  height: 90%;
+  top: 0;
+  left: 0;
+  padding: 20px 10px;
 }
 .tabContainer a {
-	margin-top: 10px;
+  margin-top: 10px;
 }
 
 .logContenitor {
-	width: 100vw;
-	height: 100vh;
-	background-color: #f0f2f5;
+  width: 100vw;
+  height: 100vh;
+  background-color: #f0f2f5;
 }
 
 .centerFlex {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 form {
-	border: none;
-	border-radius: 8px;
+  border: none;
+  border-radius: 8px;
 
-	/* margin: auto; */
-	padding: 0 0 14px 0;
-	width: 100%;
-	min-width: 360px;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	/* height: 70%;
+  /* margin: auto; */
+  padding: 0 0 14px 0;
+  width: 100%;
+  min-width: 360px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* height: 70%;
 	min-height: 200px;
 	max-height: 800px;
 	max-width: 500px; */
 }
 
 form.centerFlex {
-	max-width: 400px;
+  max-width: 400px;
 }
 
 form.centerFlex button {
-	max-width: 90%;
+  max-width: 90%;
 }
 
 .marginTop {
-	margin-top: 60px;
+  margin-top: 60px;
 }
 
 .alignCenter {
-	text-align: center;
+  text-align: center;
 }
 .txtRecom {
-	font-size: 12px;
+  font-size: 12px;
 }
 
 .inputContainer {
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 form h2 {
-	margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 form input,
 input,
 form button {
-	width: 90%;
-	border-radius: 6px;
-	font-size: 17px;
-	padding: 15px 16px;
-	border: none;
-	box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
-	margin-top: 10px;
+  width: 90%;
+  border-radius: 6px;
+  font-size: 17px;
+  padding: 15px 16px;
+  border: none;
+  box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
+  margin-top: 10px;
 }
 
 form .search {
-	padding-right: 35px;
+  padding-right: 35px;
 }
 form .inputBtn {
-	width: 60px;
-	margin-left: -50px;
-	background-color: transparent !important;
-	box-shadow: none;
-	color: #000;
+  width: 60px;
+  margin-left: -50px;
+  background-color: transparent !important;
+  box-shadow: none;
+  color: #000;
 }
 
 form button {
-	background-color: #000000;
-	width: 100%;
-	color: white;
-	border: none;
-	cursor: pointer;
+  background-color: #000000;
+  width: 100%;
+  color: white;
+  border: none;
+  cursor: pointer;
 }
 
 .addpoi input {
-	text-transform: capitalize !important;
+  text-transform: capitalize !important;
 }
 
 button:hover {
-	opacity: 0.7;
+  opacity: 0.7;
 }
 .cancelbtn {
-	width: auto;
-	padding: 10px 18px;
-	margin: 10px 5px;
+  width: auto;
+  padding: 10px 18px;
+  margin: 10px 5px;
 }
 .container {
-	padding: 25px;
-	background-color: lightblue;
+  padding: 25px;
+  background-color: lightblue;
 }
 
 #map1 {
-	margin-top: 50px;
-	width: 100vw;
-	height: 60vh;
-	position: absolute;
-	top: 10px;
-	z-index: 0;
+  margin-top: 50px;
+  width: 100vw;
+  height: 60vh;
+  position: absolute;
+  top: 10px;
+  z-index: 0;
 }
 
 form.formSearch {
-	position: fixed;
+  position: fixed;
 
-	margin: 0;
-	padding: 0;
-	background: transparent;
-	top: 60px;
-	z-index: 99999;
+  margin: 0;
+  padding: 0;
+  background: transparent;
+  top: 60px;
+  z-index: 99999;
 }
 /* form.recomendation button {
 	width: auto !important;
 } */
 
 #show_data {
-	width: 100vw;
-	height: 60vh;
-	position: absolute;
-	top: calc(60vh + 85px);
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	align-items: center;
+  width: 100vw;
+  height: 60vh;
+  position: absolute;
+  top: calc(60vh + 85px);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 
 .card {
-	background-color: #000;
-	color: #fff;
-	width: 30%;
-	min-height: 350px;
-	margin: 10px;
-	padding: 20px 30px;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
+  background-color: #000;
+  color: #fff;
+  width: 30%;
+  min-height: 350px;
+  margin: 10px;
+  padding: 20px 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .buttonContainer {
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	align-items: center;
-	width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
 }
 
 /* .card a {
@@ -311,36 +311,36 @@ form.formSearch {
 } */
 
 @media screen and (max-width: 800px) {
-	#show_data {
-		width: 100vw;
-		height: auto;
-		position: absolute;
-		top: calc(60vh + 85px);
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-	}
-	.card {
-		width: 90%;
-		min-height: 350px;
-		margin: 10px;
-		padding: 20px 30px;
-	}
+  #show_data {
+    width: 100vw;
+    height: auto;
+    position: absolute;
+    top: calc(60vh + 85px);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .card {
+    width: 90%;
+    min-height: 350px;
+    margin: 10px;
+    padding: 20px 30px;
+  }
 }
 
 .card p {
-	margin-top: 3px;
-	text-align: justify;
+  margin-top: 3px;
+  text-align: justify;
 }
 
 table {
-	border: #000 solid 2px;
+  border: #000 solid 2px;
 }
 tr,
 td,
 th {
-	border: #000 solid 2px;
-	text-align: center;
+  border: #000 solid 2px;
+  text-align: center;
 }
 /*
 table :nth-child(1) {
@@ -368,58 +368,74 @@ td {
 } */
 
 .popUpLink {
-	color: #000 !important;
-	text-decoration: none;
+  color: #000 !important;
+  text-decoration: none;
 }
 .popUpLinkTitle {
-	text-align: center;
+  text-align: center;
 }
 
 #search {
-	text-transform: capitalize;
+  text-transform: capitalize;
 }
 
 .wrong {
-	color: red;
+  color: red;
 }
 
 .username {
-	text-transform: capitalize;
+  text-transform: capitalize;
 }
 
 .btnRecom {
-	width: 100%;
-	font-size: 13px;
-	background-color: transparent;
-	border: #fff 2px solid !important;
+  width: 100%;
+  font-size: 13px;
+  background-color: transparent;
+  border: #fff 2px solid !important;
 }
 
 form.recomendation {
-	width: 45% !important;
-	min-width: auto !important;
-	margin: 0 2.5px;
+  width: 45% !important;
+  min-width: auto !important;
+  margin: 0 2.5px;
 }
 
 .noselect {
-	-webkit-touch-callout: none; /* iOS Safari */
-	-webkit-user-select: none; /* Safari */
-	-khtml-user-select: none; /* Konqueror HTML */
-	-moz-user-select: none; /* Old versions of Firefox */
-	-ms-user-select: none; /* Internet Explorer/Edge */
-	user-select: none; /* Non-prefixed version, currently
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Old versions of Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently
 									supported by Chrome, Edge, Opera and Firefox */
 }
 
 @supports (
-	(-webkit-backdrop-filter: blur(10px)) or (backdrop-filter: blur(10px)) or (-moz-backdrop-filter: blur(10px)) or
-		(-o-backdrop-filter: blur(10px)) or (-ms-backdrop-filter: blur(10px))
+  (-webkit-backdrop-filter: blur(10px)) or (backdrop-filter: blur(10px)) or
+    (-moz-backdrop-filter: blur(10px)) or (-o-backdrop-filter: blur(10px)) or
+    (-ms-backdrop-filter: blur(10px))
 ) {
-	.blur {
-		-webkit-backdrop-filter: blur(10px);
-		-moz-backdrop-filter: blur(10px);
-		-ms-backdrop-filter: blur(10px);
-		-o-backdrop-filter: blur(10px);
-		backdrop-filter: blur(10px);
-		background-color: rgba(0, 0, 0, 0.5) !important;
-	}
+  .blur {
+    -webkit-backdrop-filter: blur(10px);
+    -moz-backdrop-filter: blur(10px);
+    -ms-backdrop-filter: blur(10px);
+    -o-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    background-color: rgba(0, 0, 0, 0.5) !important;
+  }
+}
+
+.reviewsContainer {
+  width: 100%;
+  max-width: 500px;
+}
+.singleReview {
+  border: #000 2px solid;
+  width: 100%;
+  text-align: center;
+  margin: 10px;
+  padding: 40px 20px;
+}
+.singleReview p {
+  display: none;
 }
