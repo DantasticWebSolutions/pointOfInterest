@@ -1,0 +1,22 @@
+<html lang='en'>
+	<head>
+		<meta charset='UTF-8' />
+		<meta http-equiv='X-UA-Compatible' content='IE=edge' />
+		<meta name='viewport' content='width=device-width, initial-scale=1.0' />
+		<title> Login Page </title>
+		<script type='text/javascript' src='/js/scripts.js'></script>
+		<link rel='stylesheet' href='/css/style.css' />
+	</head>
+	<body>
+		<div class='logContenitor centerFlex'>
+			<form class='centerFlex' action='/login' method='post'>
+				<h2>Log In to Dantastic Map</h2>
+				<p class='wrong'>Your Username or Password are not correct</p>
+				<input class='input' type='text' placeholder='Username' name='username' required />
+				<input class='input' type='password' placeholder='Password' name='password' required />
+				<button type='submit'>Log In</button>
+				<a href='/register'>Create a new account</a>
+			</form>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,55 @@
+<html>
+	<meta name='viewport' content='width=device-width, initial-scale=1' />
+	<title> Register Page </title>
+	<head>
+		<meta charset='utf-8' />
+		<meta name='viewport' content='width=device-width, initial-scale=1' />
+		<title>Points of Interest</title>
+		<link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css' />
+		<link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css' />
+		<script src='https://code.jquery.com/jquery-3.5.1.min.js'></script>
+		<script src='https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js'></script>
+
+		<script type='text/javascript' src='/js/scripts.js'></script>
+		<link rel='stylesheet' href='/css/style.css' />
+	</head>
+	<body>
+		<div class='header'>
+			<a href='/' class='nav-item nav-link active'>
+				<div class='logo'>
+					<img src='https://gaiiff.com/wp-content/uploads/2019/07/cropped-globe-icon.png' alt='' />
+					Dantastic Map
+				</div>
+			</a>
+
+			<div class='logout'>
+				<div class='username'>
+					<a href='/logout' class='nav-item nav-link'>Logout</a>
+				</div>
+			</div>
+		</div>
+
+		<div class='logContenitor centerFlex marginTop'>
+			<form action='/poi' method='POST' class='centerFlex addpoi' onsubmit='return validateForm()'>
+				<h1> Add Point Of Interest </h1>
+
+				<input type='text' placeholder='POI name' name='name' />
+
+				<input type='text' placeholder='Type of POI' name='type' />
+
+				<input type='text' placeholder='Region' name='region' required />
+				<input type='text' placeholder='Country' name='country' required />
+
+				<input type='text' placeholder='Latitude' name='lat' value='{{{lat}}}' required />
+				<input type='text' placeholder='Longitude' name='lon' value='{{{lon}}}' required />
+
+				<input type='text' placeholder='Description' name='description' required />
+
+				<input type='text' placeholder='Number of Recomendations' name='recommendations' required />
+				<button class='input button' type='submit'>Add POI</button>
+				<a href='/'>Cancel</a>
+			</form>
+		</div>
+
+	</body>
+</html>

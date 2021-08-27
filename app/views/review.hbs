@@ -1,0 +1,35 @@
+<html>
+	<head>
+		<meta charset='UTF-8' />
+		<meta http-equiv='X-UA-Compatible' content='IE=edge' />
+		<meta name='viewport' content='width=device-width, initial-scale=1.0' />
+		<title> Show Reviews </title>
+		<script type='text/javascript' src='/js/scripts.js'></script>
+		<link rel='stylesheet' href='/css/style.css' />
+	</head>
+	<body>
+		<div class='reviewsContainer'>
+
+			{{#each result}}
+
+				<div class='singleReview'>
+					<p>Review Id {{Id}}</p>
+					<p>Region Id {{poi_id}}</p>
+					<h2>{{review}}</h2>
+				</div>
+			{{/each}}
+		</div>
+
+		<form action='/addreview' method='POST'>
+			<input type='hidden' name='poi_id' id='poi_id' value='{{poi_id}}' placeholder='POI_ID' />
+			<script>
+				var table = document.getElementById("rev"); var id= table.rows[1].cells[1].innerText;
+				id=document.getElementById('poi_id').value;
+
+			</script>
+			<textarea name='review' id='review' placeholder='Enter your review here'>
+			</textarea>
+			<button type='submit'>Add</button>
+		</form>
+	</body>
+</html>
