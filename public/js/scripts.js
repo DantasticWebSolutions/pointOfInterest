@@ -99,7 +99,8 @@ async function ajaxSearch(region) {
         const lon = elon.slice(0, 9);
         // alert(lon);
 
-        var link = `http://localhost:8000/addpoi/${lat}/${lon}`;
+        var link = `https://stark-springs-11243.herokuapp.com/${lat}/${lon}`;
+        // var link = `http://localhost:8000/addpoi/${lat}/${lon}`;
         // alert(link);
         window.open(link);
         popup

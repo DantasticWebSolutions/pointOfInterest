@@ -1,75 +1,96 @@
-<html lang='en'>
-	<head>
-		<script type='text/javascript' src='/js/scripts.js'></script>
-		<link rel='stylesheet' href='/css/style.css' />
-		<link rel='stylesheet' href='https://unpkg.com/leaflet@1.7.1/dist/leaflet.css' />
-		<script type='text/javascript' src='https://unpkg.com/leaflet@1.7.1/dist/leaflet.js'></script>
-		<meta charset='utf-8' />
-		<meta name='viewport' content='width=device-width, initial-scale=1' />
-		<title>Points of Interest</title>
-		<script src='https://code.jquery.com/jquery-3.5.1.min.js'></script>
-		<link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css' />
-	</head>
+<html lang="en">
+  <head>
+    <script type="text/javascript" src="/js/scripts.js"></script>
+    <link rel="stylesheet" href="/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+    />
+    <script
+      type="text/javascript"
+      src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+    ></script>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Points of Interest</title>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
 
-	<body>
-		<div class='header'>
-			<a href='/' class='nav-item nav-link active'>
-				<div class='logo'>
-					<img src='https://gaiiff.com/wp-content/uploads/2019/07/cropped-globe-icon.png' alt='' />
-					Dantastic Map
-				</div>
-			</a>
+  <body>
+    <div class="header">
+      <a href="/" class="nav-item nav-link active">
+        <div class="logo">
+          <img
+            src="https://gaiiff.com/wp-content/uploads/2019/07/cropped-globe-icon.png"
+            alt=""
+          />
+          Dantastic Map
+        </div>
+      </a>
 
-			<div class='logout'>
-				<div class='username'>Hello
-					{{{user_name}}}
-					|
-					<a href='/logout' class='nav-item nav-link'>Logout</a>
-				</div>
-			</div>
-		</div>
+      <div class="logout">
+        <div class="username">Hello
+          {{{user_name}}}
+          |
+          <a href="/logout" class="nav-item nav-link">Logout</a>
+        </div>
+      </div>
+    </div>
 
-		<form class='formSearch' action="javascript:ajaxSearch(document.getElementById('search').value)">
-			<div class='inputContainer'>
-				<input type='text' placeholder='Search' class='search' name='search_data' id='search' />
-				<button type='submit' class='inputBtn' id='search_poi'><i class='fa fa-search'></i></button>
-			</div>
-		</form>
+    <form
+      class="formSearch"
+      action="javascript:ajaxSearch(document.getElementById('search').value)"
+    >
+      <div class="inputContainer">
+        <input
+          type="text"
+          placeholder="Search"
+          class="search"
+          name="search_data"
+          id="search"
+        />
+        <button type="submit" class="inputBtn" id="search_poi"><i
+            class="fa fa-search"
+          ></i></button>
+      </div>
+    </form>
 
-		<div id='map1'> </div>
-		<div id='show_data'>
-			<div>
-				<h2>
+    <div id="map1"> </div>
+    <div id="show_data">
+      <div>
+        <h2>
+          The point od interest data will be displayed here once you search and
+          find a region :)
+        </h2>
+        <br />
+        <p>
+          You can try to search for "London", "Milan", "Amsterdam"
+        </p>
+        <p>
+          Or click any point in the map to add a new point of interest
+        </p>
+      </div>
+    </div>
 
-					The point od interest data will be displayed here once you search and find a region :)
-				</h2>
+    <div id="floatingButton" class="floatingButton" onclick="openNav()">
+      <div class="noselect">
 
-				<br />
-				<p>
-					You can try to search for "London", "Milan", "Amsterdam"
-				</p>
-				<p>
+        &times;
+      </div>
+    </div>
+    <div id="openedTab" class="blur" onclick="openNav()">
+      <div class="tabContainer">
+        <a href="/addpoi">Add new Position</a>
+        <a href="/addpoi">Add new Position</a>
+      </div>
+    </div>
+    <script>
+      showMap();
 
-					Or click any point in the map to add a new point of interest
-				</p>
-			</div>
-		</div>
-
-		<div id='floatingButton' class='floatingButton' onclick='openNav()'>
-			<div class='noselect'>
-
-				&times;
-			</div>
-		</div>
-		<div id='openedTab' class='blur' onclick='openNav()'>
-			<div class='tabContainer'>
-				<a href='/addpoi'>Add new Position</a>
-				<a href='/addpoi'>Add new Position</a>
-			</div>
-		</div>
-		<script>
-			showMap();
-
-		</script>
-	</body>
+    </script>
+  </body>
 </html>
